@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Lora', serif;
+}
+.bor{
+    border-right: 1px solid rgba(0, 0, 0, 0.137);
+}
+.bor2{
+    border-left: 1px solid rgba(0, 0, 0, 0.137);
+    height: 60px;
+}
+
+.bor:hover{
+    background-color: orangered;
+}
+.bor2:hover{
+    background-color: orangered;
+}
+.btn{
+    transition: 0.7s;
+    position: relative;
+    overflow: hidden;
+}
+.btn::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: orangered;
+    z-index: -1;
+    transition: 0.7s;
+}
+.un::before{
+    top: 0;
+    border-radius: 50% 50%;
+}
+.un:hover::before{
+    height: 200%;
+}
+.imp{
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+}
+.info2inner {
+    border: 15px groove #ffffff86;
+    background-color: #fff;
+}
+.info2tag {
+    color: #003b88 !important;
+}
+.info2tag:hover {
+    color: orangered !important;
+}
+
+.pagination {
+    display: inline-block;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a:hover {
+    background-color: orangered !important;
+    color: white !important;
+}
+.heropart {
+    background: #8e9eab;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+}
+.para {
+    background-color: #fff;
+}
+.foot {
+    background: #abbaab;
+    background: linear-gradient(to right, #ffffff, #abbaab);
+}
+
